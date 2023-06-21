@@ -6,6 +6,7 @@ import { Logo, Menu } from "../Components/index";
 const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuList = ["White Paper", "Project", "Donation", "Members"]
   return (
     <div className="backgroundMain">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
